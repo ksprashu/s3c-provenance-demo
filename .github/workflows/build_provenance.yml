@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create artifact
-        run:  zip build.zip .
+        run:  zip build.zip *
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
